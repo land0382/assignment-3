@@ -1,0 +1,172 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.name {
+  flex: 1;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+#hero {
+  height: 600px;
+  background-image: url("../images/hands-typing.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  color: #fff;
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#about-me .wrapper {
+  display: flex;
+  justify-content: space-between;   align-items: flex-start;
+}
+
+#about-me .text {
+  flex: 1; 
+}
+
+#about-me img {
+  width: 60%; 
+  max-width: 100%; 
+  height: auto;
+  float: right; 
+
+}
+
+
+
+#about-me {
+  text-align: left;
+}
+
+#about-me .wrapper {
+  margin-bottom: 40px;
+}
+
+#about-me .text {
+  flex: 1; 
+  margin-right: 20px; 
+  width: 80%;
+}
+
+
+
+#services {
+  background-color: #fafafa;
+}
+
+#services h2 {
+  max-width: 80%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.services-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-grid article .btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  width: auto;
+  max-width: 100px;
+}
+
+
+
+.services-grid article .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+#work {
+  text-align: center;
+}
+
+#work .wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+#work .image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto; 
+  gap: 0;
+}
+
+#work img {
+  width: 100%;
+  height: auto;
+}
+
+#work img:nth-child(3) {
+  grid-row: 2;
+}
+
+#work img:nth-child(n+4) {
+  grid-row: 2;
+}
+
+#work img.large {
+  width: 300px;
+}
+
+
+footer {
+  background-color: #000; 
+  color: #fff; 
+  text-align: center; 
+  padding: 20px 0; 
+}
